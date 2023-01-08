@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+body{
+    background-image:url(https://fondosmil.com/fondo/32016.jpg);
+    background-size: 100%;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.sectionarriba{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    height: 5rem;
+    width: 100vw;
+    color: white;
+    border-bottom:  0.05rem solid white;
+    border-top:  0.05rem solid white;
+    box-shadow:  10px 10px 15px rgb(247, 241, 241);
+   background-color: black;
+   margin: 0;
+
+}
+.sectionarriba img{
+    height: 12rem;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+}
+.sectionarriba h1{
+    margin-left: 15rem;
+    font-size: 5rem;
+    font-family: 'Righteous', cursive;
+}
+.section-a{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    margin-left: 33rem;
+    margin-top: 2rem;
+
+   
+
+}
+.jump{
+  margin-left: -20rem;
+  width: 30rem;
+  height: 5rem;
+  margin-top: -25rem;
+
+}
+.section-a h3{
+    font-size: 3rem;
+    font-family: 'Slabo 27px', serif;
+
+}
+.section-a .pp{
+    margin-bottom: -1.3rem;
+    background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  width: 20rem;
+  background-image: linear-gradient(to right,red , orange, yellow, green,  yellow, orange, red);
+ 
+}
+.section-a p{
+    font-size: 1.5rem;
+    font-family: 'Slabo 27px', serif;
+}
+.container-images{
+    position: relative;
+    width:28rem;
+    height:28rem;
+    border: 0.15rem solid rgb(249, 250, 250);
+    overflow: hidden;
+    box-shadow: 0px 10px 15px rgb(249, 251, 252);
+    border-radius: 2rem;
+    margin-top: 5rem;
+ 
+}
+
+
+.imagen{
+   background-image: url(/css/1.jpg) ;
+    position: absolute;
+    border-radius: 2rem;
+    width:28rem;
+    height:38rem;
+    animation: animate 15s infinite;
+    
+}
+
+@keyframes animate{
+
+    25%{background-image: url(/css/4.jpg);}
+    50%{background-image: url(/css/3.jpg);}
+    75%{background-image: url(/css/2.jpg);}
+    100%{background-image: url(/css/1.jpg);}
+  
+}
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 50vh;
+    margin-top: 1rem;
+    gap: 3rem;
+
+}
+
+.cap img{
+    width: 28rem;
+    transition: 0.5s;
+    border-radius: 1rem;
+    border: 0.1rem white solid;
+
+}
+ .cap .content img:hover {
+    cursor: pointer;
+   width: 32rem;
+   box-shadow: 0 10px 10px white;
+
+}
+
+button{
+    background-color: rgb(66, 66, 66);
+    color: aliceblue;
+    height: 2rem;
+    width: 4rem;
+    border-radius: 0.5rem;
+    border: 1px solid white;
+}
+button a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.content{
+ width: 100%;
+
+}
+.content .btn1{
+    position: absolute;
+   left:  5vw;
+   visibility: hidden;
+   transition: 0.01s;
+   cursor: pointer;
+   opacity: 0.50;
+}
+.content:hover .btn1{
+    visibility:visible;
+ }
+ .btn1:hover {
+     opacity: 1;
+ }
+  
+.content .btn2{
+    position: absolute;
+   left:  36.5vw ;
+
+   visibility: hidden;
+   transition: 0.01s;
+   cursor: pointer;
+   opacity: 0.50;
+}
+.content:hover .btn2{
+    visibility: visible;
+ }
+ .btn2:hover {
+    opacity: 1;
+}
+.content .btn3{
+    position: absolute;
+   left:  69vw ;
+   visibility: hidden;
+   transition: 0.01s;
+   cursor: pointer;
+   opacity: 0.50;
+}
+
+ .content:hover .btn3{
+    visibility: visible;
+ }
+ .btn3:hover {
+    opacity: 1;
+}
+
+.containerfinal{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 50vh;
+    margin-top: -3.5rem;
+    gap: 3rem;
+}
+.content .btn4{
+    position: absolute;
+    left:  5vw;
+
+   visibility: hidden;
+   transition: 0.01s;
+   cursor: pointer;
+   opacity: 0.50;
+}
+
+ .content:hover .btn4{
+    visibility: visible;
+ }
+ .btn4:hover {
+    opacity: 1;
+}
+.content .btn5{
+    position: absolute;
+    left:  36.5vw ;
+
+   visibility: hidden;
+   transition: 0.01s;
+   cursor: pointer;
+   opacity: 0.50;
+}
+
+ .content:hover .btn5{
+    visibility: visible;
+ }
+ .btn5:hover {
+    opacity: 1;
+}
+.content .btn6{
+    position: absolute;
+   left:  69vw ;
+
+   visibility: hidden;
+   transition: 0.01s;
+   cursor: pointer;
+   opacity: 0.50;
+}
+
+ .content:hover .btn6{
+    visibility: visible;
+ }
+ .btn6:hover {
+    opacity: 1;
+}
+
+
+
