@@ -18,16 +18,15 @@ body{
     border-top:  0.05rem solid white;
     box-shadow:  10px 10px 15px rgb(247, 241, 241);
    background-color: black;
-   margin: 0;
+   gap: 5rem;
 
 }
 .sectionarriba img{
-    height: 12rem;
-    margin-left: 2rem;
     margin-top: 0.5rem;
+    width: 12rem;
 }
 .sectionarriba h1{
-    margin-left: 15rem;
+    margin-left:8rem;
     font-size: 5rem;
     font-family: 'Righteous', cursive;
 }
@@ -246,5 +245,67 @@ button a{
     opacity: 1;
 }
 
+#header {
+    margin-left: -15rem;
+    width: 15rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
+ul, ol {
+    list-style:none;
+}
+
+
+.nav > li {
+    float:left;
+}
+
+.nav li a {
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+
+ .nav a {
+    padding: 0 0 0 0;
+   
+}
+
+.nav .ul a{
+    margin-left: -2.5rem;
+    margin-top: -0.5rem;
+}
+
+.nav li a:hover {
+    background-color:#43434300;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+
+
+.nav img{
+    width: 2.5rem;
+    box-sizing: border-box;
+ 
+}
+.nav img:hover{
+    width: 2.5rem;
+    border-bottom: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgb(249, 251, 252);
+  
+}
+.nav ul{
+    margin-top: 0.5rem;
+}
 
