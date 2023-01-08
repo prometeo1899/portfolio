@@ -82,7 +82,7 @@ body{
 
 
 .imagen{
-   background-image: url(/1.jpg) ;
+   background-image: url(./images/1.jpg) ;
     position: absolute;
     border-radius: 2rem;
     width:28rem;
@@ -93,10 +93,10 @@ body{
 
 @keyframes animate{
 
-    25%{background-image: url(/4.jpg);}
-    50%{background-image: url(/3.jpg);}
-    75%{background-image: url(./2.jpg);}
-    100%{background-image: url(/1.jpg);}
+    25%{background-image: url(./images/4.jpg);}
+    50%{background-image: url(./images/3.jpg);}
+    75%{background-image: url(./images/2.jpg);}
+    100%{background-image: url(./images/1.jpg);}
   
 }
 .container{
