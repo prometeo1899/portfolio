@@ -7,6 +7,7 @@ body{
     height: 100vh;
     align-items: center;
     justify-content: center;
+  
 }
 .sectionarriba{
     position: absolute;
@@ -96,9 +97,10 @@ ul, ol {
     display: flex;
     margin-left: 0em;
     height: 40em;
-    background-position: 50%;
+    background-position: left;
     background-image: url(https://st1.u-tad.com/media/2021/12/desarrollo-aplicaciones-web.jpg);
     border-bottom: 1px solid black ;
+    background-size: cover;
 }
 .jump{
     display: flex;
@@ -106,20 +108,20 @@ ul, ol {
     justify-self: center;
     width: 20em;
     height: 7em;
-    margin-left: 9em;
+    margin-left: 15em;
     margin-top: 9em;
     color: rgb(247, 243, 243);
     font-weight: 400;
 }
 .section-a h3{
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-family: 'Slabo 27px', serif;
     margin: 0.5em;
 }
 .section-a p{
 
     font-family: 'Slabo 27px', serif;
-    font-weight: 600;
+    font-weight: 700;
 }
 .porta{
     display: flex;
