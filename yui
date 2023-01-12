@@ -71,3 +71,27 @@
                         </div>        
                     </div>   
                 
+                    .container2{
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100vw;
+                        height: 50vh;
+                       top: -2.5em;
+                        gap: 2em;
+                        margin: 0;
+                    }
+                    
+                    .container3{
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100vw;
+                        height: 50vh;
+                        top: -5em;
+                        gap: 2em;
+                        margin: 0;
+                    }
+                    

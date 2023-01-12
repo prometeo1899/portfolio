@@ -120,16 +120,42 @@ ul, ol {
     font-family: 'Slabo 27px', serif;
     font-weight: 600;
 }
+.porta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+.separador{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100vw;
+    margin: 0;
+
+}
+hr{
+    width: 40vw;
+}
+
+.porta h3 {
+    font-family: 'Slabo 27px', serif;
+}
 .container{
+    box-sizing: border-box;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 50vh;
-    margin-top: 1rem;
+    width: 90vw;
     gap: 2em;
-    margin: 0;
+    height: 21em;
+    margin-bottom: 2rem;
+    margin-top: -3em;
+    left: 5em;
+}
+.cap p{
+    font-family: 'Slabo 27px', serif;
 }
 .cap img{
     width: 28em;
@@ -138,28 +164,17 @@ ul, ol {
     border: 0.15em solid rgb(108, 108, 110);
 
 }
+.content{
+    width: 100%;
+   
+   }
  .cap .content img:hover {
     cursor: pointer;
    width: 35em;
    box-shadow: 0 20px 25px rgb(108, 108, 110);
    box-shadow: 0 20px 25px rgb(108, 108, 110);
 }
-button{
-    background-color: rgb(66, 66, 66);
-    color: aliceblue;
-    height: 2em;
-    width: 4em;
-    border-radius: 0.5rem;
-    border: 1px solid white;
-}
-button a{
-    text-decoration: none;
-    color: aliceblue;
-}
-.content{
- width: 100%;
 
-}
 
 .content p {
     color: rgba(255, 255, 255, 0);
@@ -172,30 +187,21 @@ button a{
 .content:hover p{
     color:rgb(210, 210, 212);
    text-decoration: underline;
-
 }
-.container2{
-    position: relative;
+.redes{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 50vh;
-   top: -2.5em;
-    gap: 2em;
-    margin: 0;
+ 
 }
-
-.container3{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 50vh;
-    top: -5em;
-    gap: 2em;
-    margin: 0;
+a img {
+    width: 2.5em;
+}
+.redes a img {
+    margin-left: 2rem;
+}
+a img:hover{
+    opacity: 0.50;
 }
 
 

@@ -1,0 +1,18 @@
+body {
+    background-image: url(https://mobimg.b-cdn.net/v3/fetch/05/05eeb93a2e41734ecb6044146351f11e.jpeg);
+    width: 100vw;
+    background-position: 20%;
+   
+}
+.content{
+    margin-top: 3rem;
+    color: white;
+}
+.content img{
+    width: 50vw;
+ 
+}
+
+.content img:hover {
+opacity: 0.80;
+}

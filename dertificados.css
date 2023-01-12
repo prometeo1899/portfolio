@@ -1,0 +1,8 @@
+body{
+    width: 100%;
+}
+img{
+    width: 90vw;
+margin: 2rem;
+border: 2px solid rgba(0, 0, 0, 0.521);
+}
