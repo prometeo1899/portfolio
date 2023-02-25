@@ -3,10 +3,9 @@
 body{
    background-color: rgba(250, 245, 245, 0.979);
     margin: 0;
-    width: 100vw;
-    height: 100vh;
     align-items: center;
     justify-content: center;
+    overflow: auto;
   
 }
 .sectionarriba{
@@ -145,23 +144,20 @@ hr{
     font-family: 'Slabo 27px', serif;
 }
 .container{
-    box-sizing: border-box;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90vw;
-    gap: 2em;
-    height: 21em;
-    margin-bottom: 2rem;
-    margin-top: -3em;
-    left: 5em;
+display: flex;
+gap: 2rem;
+align-self: center;
+background-color: aqua;
+justify-content: center;
+align-items: center;
+}
+   
 }
 .cap p{
     font-family: 'Slabo 27px', serif;
 }
 .cap img{
-    width: 28vw;
+    width: 22em;
     transition: 0.5s;
     border-radius: 1rem;
     border: 0.15em solid rgb(108, 108, 110);
@@ -173,7 +169,7 @@ hr{
    }
  .cap .content img:hover {
     cursor: pointer;
-   width: 35vw;
+   width: 27em;
    box-shadow: 0 20px 25px rgb(108, 108, 110);
    box-shadow: 0 20px 25px rgb(108, 108, 110);
 }
