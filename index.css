@@ -1,0 +1,706 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:lang(en) [data-en] { display: block; } 
+:lang(en) [data-es] { display: none; }
+
+:lang(es) [data-es] { display: block; }
+:lang(es) [data-en] { display: none; }
+
+html {
+  scroll-behavior: smooth;
+}
+
+ 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* NAV BAR */
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  font-size: 1.5em;
+  font-family: quicksand;
+ }
+
+a.middle
+{
+    position: relative;
+}
+
+a.middle:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(133, 133, 131, 0.925);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+a.middle:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.nav a { 
+  display: flex;
+  padding: 10px;
+}
+img {
+  width: 7rem;
+ margin-bottom: 1rem;
+  
+}
+@media (max-width: 480px) {
+  #navbar {
+    width: 100%;
+    font-size: 1em;
+  }
+  
+  #welcome-section {
+    width: 100%;
+    font-size: 0.5em;
+  }
+  
+  a {
+    margin-right: 0.3em;
+  }
+}
+
+/* BUTTON */
+
+button {
+  display: flex;
+  position: fixed;
+  top: 10px;
+  left: 30px;
+  padding: 1.1rem;
+	font-family: 'Raleway' 100;
+  font-size: 1em;
+	background-color: rgba(0, 0, 0, 0);
+  color: var(--main-pink);
+  border-style: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+button:hover {
+transform: scale(1.1);
+}
+
+#es {
+background-image: url("https://drive.google.com/uc?id=19JamEe-E4qSJIDY52ECjZwxgse9znpU9");
+background-size: 35px;
+}
+
+#en {
+background-image: url("https://drive.google.com/uc?id=1LhO7SfYQOZTpVlikVd-hA7meUxhQyVk1");
+background-size: 35px;
+}
+
+/* WELCOME SECTION */
+
+#welcome-section { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-width: 100%;
+  height: 100vh; 
+  background-color: #fff;
+  background-size: cover; 
+        /* Colors generated on: https://colorhunt.co/palette/179481 */
+  background: url(https://images.wallpaperscraft.com/image/single/cup_coffee_books_156306_1920x1080.jpg) no-repeat center center fixed ;
+    overflow: hidden;
+      animation: colors 100s ease infinite;
+    }
+
+    @keyframes colors {
+      0% { 
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+
+@media (max-width: 481px) {
+  .frente, .trasero {
+    max-width: 200px;
+    padding: 15px 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .face {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #welcome-section {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  button {
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+}
+
+.face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes vanish {
+  0% {
+    transform: scaleX(0) skew(-20deg);
+    transform: skew(-20deg);
+        opacity: 0;
+  }
+  30% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  75% {
+    opacity: 10;
+  }
+  100% {
+    transform: scaleX(1) skew(-20deg);
+    opacity: 10;
+  }
+}
+
+@keyframes vanish2 {
+   0% {
+    transform: scaleX(0) skew(-20deg);
+    transform: skew(-20deg);
+        opacity: 0;
+  }
+  30% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  75% {
+    opacity: 10;
+  }
+  100% {
+    transform: scaleX(1) skew(-20deg);
+    opacity: 10;
+  }
+}
+
+.portada {
+  font-size: 3em !important;
+  padding: 15px 0px;
+}
+
+.frente {
+  margin-right: 150px;
+  font-family: 'Bebas Neue'; 
+  border-style: solid;
+  border-color: white;
+  width: 250px;
+  color: white; 
+  animation: vanish 4s;
+  font-size: 4em;
+  transform: skew(-20deg); 
+    transform-origin: 100% 0%; 
+} 
+
+.trasero {  
+  margin-left: 150px;
+  transform: skew(-20deg);
+  font-family: 'Bebas Neue'; 
+  font-size: 4em;
+  width: 250px; 
+  border-style: solid;
+  border-color: white;
+  animation: vanish2 4s cubic-bezier(.39,.575,.565,1.000);
+  color: black;
+  background-color: white;
+  mix-blend-mode: screen; 
+  text-align: center;
+}
+
+
+
+.footer {
+position: relative;
+top: 200px;
+  color: white;
+  font-family: 'Raleway';
+  font-size: 20px;
+ 
+}
+
+.line {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  background-color: rgb(245, 245, 238); 
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 1px;
+  color: rgb(249, 249, 245);
+}
+
+/* ABOUT */
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-width: 100%;
+  height: 100vh; 
+  background-color: #fff;
+  background-size: cover; 
+        /* Colors generated on: https://colorhunt.co/palette/179481 */
+      background: url(https://images.wallpaperscraft.com/image/single/cup_coffee_books_156306_1920x1080.jpg) no-repeat center center fixed ;
+      animation: colors 100s ease infinite;
+     
+    }
+
+    @keyframes colors {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+
+.about-title {
+  background-color: white;
+  color: black;
+  font-family: 'Bebas Neue';
+  margin: auto;
+  margin-top: 80px;
+  transform: skew(-20deg);
+}
+
+.description {
+  color: white;
+  font-family: 'Quicksand';
+  font-weight: 300;
+  font-size: 23px;
+  text-align: center;
+  margin-right: 10%;
+  margin-left: 10%;
+  text-align: justify;
+  margin-top: 5px;
+}
+
+.about-container {
+  font-family: 'Raleway';
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  color: white;
+  font-weight: 800;
+  text-align: justify;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 320px) {
+  .about-container {
+  width: 100%;
+    height: 100%;
+  }
+  .description {
+    font-size: 3vw;
+  }
+  #about {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    width: 100%;
+    height: 100%;
+  }
+  .description {
+    font-size: 4vw;
+  }
+  #about {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* WORKS' SECTION */
+
+#works { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%; 
+  background-color: #fff;
+  background-size: cover; 
+       background: url(https://images.wallpaperscraft.com/image/single/cup_coffee_books_156306_1920x1080.jpg) no-repeat center center fixed ;
+
+      animation: colors 100s ease infinite;
+    }
+
+    @keyframes colors {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+.projects-section-header {
+  background-color: white;
+  color: black;
+  mix-blend-mode: screen; 
+  width: 120px;
+ padding: 10px 20px;
+  font-size: 30px;
+  font-family: 'Bebas Neue';
+  align-self: center;
+  margin-top: 70px;
+  margin-bottom: 15px;
+  transform: skew(-20deg);
+}
+ 
+.boxes-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cardBox {
+  font-size: 2em;
+  perspective: 800px; 
+  transition: all 0.3s ease 0s;
+}
+
+.cardBox:hover .card {
+  transform: rotateY( 180deg);
+}
+
+.card {
+  background: url(https://images.unsplash.com/photo-1609645778471-613f21fcf3df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmVydGljYWwlMjB3YWxscGFwZXJ8ZW58MHx8MHx8&w=1000&q=80) center center;
+  background-size: cover;
+  cursor: default;
+  height: 380px;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease 0s;
+  width: 300px;
+  -webkit-animation: giro 1s 1;
+  animation: giro 1s 1;
+  border-radius: 1rem;
+  
+}
+
+.card p {
+  margin-bottom: 1.5em; 
+  -webkit-text-stroke-color: #040404 6px;
+} 
+
+.card .front,
+.card .back {
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  color: white; 
+  display: block;
+  font-size: 1em;
+  height: 100%;
+  padding: 0.8em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-family: 'Quicksand';
+}
+
+.card2 {
+  background: url(https://st4.depositphotos.com/22919514/26579/v/450/depositphotos_265796230-stock-illustration-agile-manager-worker-icon-elements.jpg) center center;
+  background-size: cover;
+}
+
+.card3 {
+  background: url(https://i.blogs.es/66a334/android/1366_2000.jpeg) center center;  
+  background-size: cover;
+}
+
+.card4 {
+  background: url(https://lh3.googleusercontent.com/pBcA1j3_PfPJwJWlqqZt8ANA_ViSQMiFX4PcFVvX2LMHLLR_GiY1sHEJzfB0S0imOA) center center;
+  background-size: cover;  
+}
+
+.card5 {
+  background: url(https://www.wallpapertip.com/wmimgs/32-321570_camera-vintage-wallpaper-vintage-wallpaper-camera.jpg) center center;
+  background-size: cover;  
+}
+
+.card6 {
+  background: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/752ed5109923779.5fdf5d8d976f4.jpg) center center;
+  background-size: cover;
+}
+
+.card7 {
+  background: url(https://images.squarespace-cdn.com/content/v1/5d7fdb87e2ed494f360139ef/20fd53a9-452a-48bd-959a-68f0f516821c/ENTHIAN+Productora+Audiovisual) center center;
+  background-size: cover;
+}
+
+.card8 {
+  background: url(https://img.freepik.com/fotos-premium/banner-fondo-inteligencia-artificial-metaverso-que-muestra-tecnologia-ia-ia-generativa_620624-6971.jpg ) center center;
+  background-size: cover;
+}
+
+.card9 {
+  background: linear-gradient(to bottom right, #ea59d4, #b125a5);
+}
+
+.card10 {
+  background: linear-gradient(to bottom right, #bfea59, #88b125);
+}
+
+.card11 {
+ 
+}
+
+.card .front strong {
+  background: #fff;
+  border-radius: 100%;
+  color: #fff;
+  font-size: 1.5em;
+  line-height: 10px;
+  padding: 0 7px 4px 6px; 
+}
+
+.card .back {
+  transform: rotateY( 180deg);
+  font-size: 0.8em;
+  color: #fff;
+}
+
+.card .back a {
+  padding: 0.3em 0.5em;
+  background: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 1px;
+  font-size: 0.9em;
+  transition: all 0.2s ease 0s;
+}
+
+.card .back a:hover {
+  background: #fff;
+  color: #333;
+  text-shadow: 0 0 1px #333;
+}
+
+.cardBox:nth-child(2) .card {
+  -webkit-animation: giro 1.5s 1;
+  animation: giro 1.5s 1;
+}
+
+.cardBox:nth-child(3) .card {
+  -webkit-animation: giro 2s 1;
+  animation: giro 2s 1;
+}
+
+.cardBox:nth-child(4) .card {
+  -webkit-animation: giro 2.5s 1;
+  animation: giro 2.5s 1;
+}
+
+@-webkit-keyframes giro {
+  from {
+    transform: rotateY( 180deg);
+  }
+  to {
+    transform: rotateY( 0deg);
+  }
+}
+
+@keyframes giro {
+  from {
+    transform: rotateY( 180deg);
+  }
+  to {
+    transform: rotateY( 0deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardBox {
+    font-size: 1.5em;
+  }
+  .card {
+    height: 285px; 
+    width: 240px;
+  }
+  .cardBox:last-child {
+    margin-bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+.boxes-container {
+  float: center;
+}
+  
+  .cardBox {
+    font-size: 1.2em;
+  }
+}
+
+/* CONTACT ME SECTION */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-width: 100%;
+  height: 100vh; 
+  background-color: #fff;
+  background-size: cover; 
+        /* Colors generated on: https://colorhunt.co/palette/179481 */
+      background:  url(https://images.wallpaperscraft.com/image/single/cup_coffee_books_156306_1920x1080.jpg) no-repeat center center fixed ;
+      animation: colors 100s ease infinite;
+    }
+
+    @keyframes colors {
+      0% { 
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+.subtitle { 
+  text-align: center;
+  margin-top: 15px;
+  font-size: 35px;
+  color: white;
+  font-family: 'Quicksand';
+  font-weight: 100;
+} 
+ 
+.information {
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+  justify-content: center;
+  height: 100%;
+  line-height: 2;
+  margin-bottom: 100px;
+}
+
+.href:hover {
+  color: rgb(61, 61, 61);
+  transition: color 0.3s ease-out;
+}
+
+#firstline, #secondline, #thirdline, #fourthline {
+  margin-left: auto;
+  margin-right: auto;
+  width: 7px;
+  height: 7px;
+  background-color: rgb(61, 61, 61);
+  border-style: none;
+  transform: rotate(45deg);
+}
+
+.links {
+  font-family: 'Quicksand';
+  font-size: 30px; 
+  color: white; 
+}
+
+.bye {
+  position: relative;
+  bottom: 30px;
+  color: white;
+  font-family: 'Raleway';
+  font-size: 20px;
+}
+
+.line1 {
+  position: relative;
+  left: 50%;
+  bottom: 40px;
+  background-color: rgb(245, 245, 236); 
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 1px;
+  color: rgb(253, 253, 245);
+}
+
+@media (max-width: 768px) {
+  .links {
+    font-size: 25px !important;
+  }
+  .subtitle {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .links {
+    font-size: 25px !important;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
+  .bye {
+    font-size: 15px;
+  }
+}
