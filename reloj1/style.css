@@ -71,3 +71,26 @@ hr{
     
     
 }
+@media screen and (max-width: 800px)
+{
+    body{
+        
+    }
+    .reloj{
+        height: 90px;
+      
+    }
+    p{
+        font-size: 90px;
+    }
+    hr{
+        width: 180px;
+        margin-left: -11rem;
+    }
+    .day{
+        margin-left: -11rem;
+    }
+    .dia{
+        font-size: 15px;
+    }
+}
