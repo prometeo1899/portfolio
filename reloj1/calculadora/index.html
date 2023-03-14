@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+ <div class="calculadora">
+    <input type="text" name="pantalla" id="pantalla" placeholder="0">
+    <button class="symbol" onclick="borrar()">C</button>
+    <button class="symbol" onclick="mostrar(`.`)">.</button>
+    <button class="symbol" onclick="mostrar(`%`)">%</button>
+    <button class="symbol" onclick="mostrar(`*`)">*</button>
+
+    <button class="number" onclick="mostrar(`7`)">7</button>
+    <button class="number" onclick="mostrar(`8`)">8</button>
+    <button class="number" onclick="mostrar(`9`)">9</button>
+    <button class="symbol" onclick="mostrar(`-`)">-</button>
+
+    <button class="number" onclick="mostrar(`4`)">4</button>
+    <button class="number" onclick="mostrar(`5`)">5</button>
+    <button class="number" onclick="mostrar(`6`)">6</button>
+    <button class="symbol" onclick="mostrar(`+`)">+</button>
+  
+    <button class="number" onclick="mostrar(`1`)">1</button>
+    <button class="number" onclick="mostrar(`2`)">2</button>
+    <button class="number" onclick="mostrar(`3`)">3</button>
+    <button class="symbol" onclick="mostrar(`/`)">/</button>
+
+    <button class="number" onclick="mostrar(`(`)">(</button>
+    <button class="number" onclick="mostrar(`0`)">0</button>
+    <button class="number" onclick="mostrar(`)`)">)</button>
+    <button class="symbol" onclick="calcular(`=`)">=</button>
+ </div>
+   
+<script src="./funcionalidad.js"></script>
+</body>
+</html>
