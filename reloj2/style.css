@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&family=Montserrat+Alternates:wght@100&display=swap');
+body{
+    background: url(https://images3.alphacoders.com/166/166569.jpg) no-repeat center center fixed;
+    height: 100vh;
+    background-size: cover;
+}
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    align-items: center;
+
+
+    
+}
+.date{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-left: 3rem;
+    font-family: 'Josefin Slab', serif;
+    gap: 0.2rem;
+
+}
+.time{
+    display: flex;
+    height: 25rem;
+    width: 26rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(240, 248, 255, 0.196);
+    color: white;
+    font-size: 120px;
+    border-radius: 20rem;
+   border: white solid 1px;
+   font-family: 'Dosis', sans-serif;
+}
+.pm{
+    font-size: 50px;
+}
+.text{
+    color: white;
+    margin-top: 8rem;
+    font-size: 25px;
+    width: 30rem;
+    padding-top: 5rem;
+}
+.contain{
+    display: flex;
+    align-items: flex-start;
+    
+    height: 100vh;
+    flex-direction: column;
+}
+hr{
+    width: 160px;
+    margin-left: 3rem;
+    margin-top: -1rem;
+    height: 0.5px;
+    background-color: aliceblue;
+    border: none;
+   
+}
