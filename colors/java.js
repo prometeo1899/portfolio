@@ -53,9 +53,9 @@ function lightButton(button){
 
 }
 function lightButtonn(button){
-    button.classList.add("active");
+    button.classList.add("activo");
     setTimeout(()=>{
-    button.classList.remove("active")
+    button.classList.remove("activo")
 },100
     )
 
