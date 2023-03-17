@@ -48,7 +48,15 @@ function lightButton(button){
     button.classList.add("active");
     setTimeout(()=>{
     button.classList.remove("active")
-},200
+},400
+    )
+
+}
+function lightButtonn(button){
+    button.classList.add("active");
+    setTimeout(()=>{
+    button.classList.remove("active")
+},100
     )
 
 }
@@ -57,7 +65,7 @@ function buttonPress(event){
         var button=event.target;
         if( button===patron[indexPlayerPatron]){
             indexPlayerPatron=indexPlayerPatron+1;
-            lightButton(button);
+            lightButtonn(button);
             if( indexPlayerPatron===patron.length){
             newlevel();}
         }

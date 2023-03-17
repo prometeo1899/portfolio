@@ -29,6 +29,9 @@ button{
  
 }
 button.active{
+    box-shadow: 0 0 10px 10px rgb(189, 241, 2);
+}
+button.activo{
     box-shadow: 0 0 10px 10px rgb(145, 146, 147);
 }
 .contenedor{
