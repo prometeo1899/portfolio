@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Josefin+Slab:wght@100&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(https://www.xtrafondos.com/descargar.php?id=7105&resolucion=2560x1440) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-size: 11px;
+    font-family: 'Josefin Sans', sans-serif;
+
+
+}
+button{
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    
+ 
+}
+button.active{
+    box-shadow: 0 0 10px 10px rgb(145, 146, 147);
+}
+.contenedor{
+    margin-top: 5.3rem;
+}
+h1{
+    margin-top: 2rem;
+}
+#red{
+    background-color:rgb(247,60,246);
+}
+#green{
+    background-color: rgb(2,253,252);
+    
+}
+#blue{
+    background-color: rgb(249,14,113);
+}
+#yellow{
+    background-color: rgb(73,42,148);
+}
