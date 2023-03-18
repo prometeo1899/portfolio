@@ -23,6 +23,7 @@ yellow.addEventListener('click' ,buttonPress)
 
 function starGame(){
     if(state===`press-key`|| state==='gameover'){
+    
         newlevel()
     }
 }
@@ -73,6 +74,8 @@ function buttonPress(event){
             state='gameover'
             title.innerText='GAME OVER'
             level=0
+            patron=[]
+          
         } 
     }
 }
