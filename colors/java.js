@@ -64,6 +64,8 @@ function lightButtonn(button){
 function buttonPress(event){
     if( state==='waitting-player'){
         var button=event.target;
+        var audio=new Audio('click.m4a')
+        audio.play();
         if( button===patron[indexPlayerPatron]){
             indexPlayerPatron=indexPlayerPatron+1;
             lightButtonn(button);
@@ -73,6 +75,8 @@ function buttonPress(event){
         else{
             state='gameover'
             title.innerText='GAME OVER'
+            var audio=new Audio('gameover.m4a')
+            audio.play()
             level=0
             patron=[]
           
