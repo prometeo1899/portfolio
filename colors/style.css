@@ -22,7 +22,7 @@ button{
     width: 200px;
     height: 200px;
     margin: 1rem;
-    border: 2.5px solid white;
+    border: 2px solid white;
     cursor: pointer;
     border-radius: 1.5rem;
     box-sizing: border-box;
