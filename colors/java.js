@@ -10,11 +10,12 @@ var red= document.getElementById('red');
 var green= document.getElementById('green');
 var blue= document.getElementById('blue');
 var yellow= document.getElementById('yellow');
+var comenzar=document.getElementById('comenzar')
 var button=[red,green,blue,yellow]
 
 
 
-document.addEventListener(`keypress`, starGame)
+comenzar.addEventListener(`click`, starGame)
 red.addEventListener('click' ,buttonPress)
 green.addEventListener('click' ,buttonPress)
 blue.addEventListener('click' ,buttonPress)
@@ -22,9 +23,12 @@ yellow.addEventListener('click' ,buttonPress)
 
 
 function starGame(){
+    var audio= new Audio('start.m4a')
+    audio.play()
     if(state===`press-key`|| state==='gameover'){
     
         newlevel()
+        comenzar.style.visibility="hidden"
     }
 }
 function newlevel(){
@@ -79,6 +83,10 @@ function buttonPress(event){
             audio.play()
             level=0
             patron=[]
+            setTimeout(()=> {
+                comenzar.style.visibility="visible"
+                title.innerText='PRESIONA COMENZAR'
+            }, 2000);
           
         } 
     }
