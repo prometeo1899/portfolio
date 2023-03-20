@@ -1,0 +1,82 @@
+@font-face {
+    font-family: allema;
+    src: url(./Game\ On_PersonalUseOnly.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    
+    background: url(https://wallpaper.dog/large/20533931.jpg) center center fixed;
+    background-size: cover;
+ 
+}
+
+h1{
+    margin-top: 2rem;
+    color: rgb(247, 243, 243);
+    font-family: allema;
+    font-size: 45px;
+    font-style: normal;
+ 
+}
+.central{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 10rem;
+}
+ img{
+    width: 600px;
+    height: 600px;
+
+    cursor: pointer;
+    border-radius: 2rem;
+ 
+
+   
+}
+.central1{
+    width: 600px;
+    height: 600px;
+    position: relative;
+    border: 3px solid white;
+    border-radius: 2.1rem;
+}
+
+#contenedor1,
+#contenedor2,
+#contenedor3,
+#contenedor4{
+   
+
+position: absolute;
+}
+
+
+
+.miniaturas{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+margin-right: 10rem;
+    margin-top: 5rem;
+}
+.miniaturas img{
+   
+    width: 8rem;
+    height: 8rem;
+    visibility: visible;
+    border: 1px solid rgb(234, 84, 14);
+}
