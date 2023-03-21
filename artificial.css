@@ -1,0 +1,27 @@
+body {
+    background:url(https://images.wallpaperscraft.com/image/single/cup_coffee_books_156306_1920x1080.jpg) no-repeat center center fixed;
+    width: 100vw;
+    background-position: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    color: white;
+    
+}
+.content img{
+    width: 20rem;
+    box-shadow: 0 10px 10px rgb(248, 248, 250);
+    border-radius: 1rem;
+ 
+}
+
+.content img:hover {
+opacity: 0.80;
+}
